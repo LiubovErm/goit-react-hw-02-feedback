@@ -18,6 +18,7 @@ export const Button = styled.button`
   border: none;
   background-color: ${props => props.theme.colors.grey};
   width: 80px;
+  padding: ${props => props.theme.space[3]}px;
   :hover {
     background-color:${props => props.theme.colors.darkGrey};
     color: ${props => props.theme.colors.white};
