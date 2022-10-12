@@ -9,7 +9,7 @@ export const FeedbackOptions = ({ options, onClickFeedBack }) => {
         {options.map(option => {
           return (
             <ButtonItem key={option}>
-              <Button type="button" onClick={() => {onClickFeedBack(option);}}>{option}</Button>
+              <Button type="button" name={option} onClick={() => {onClickFeedBack(option);}}>{option}</Button>
             </ButtonItem>
           );
         })}

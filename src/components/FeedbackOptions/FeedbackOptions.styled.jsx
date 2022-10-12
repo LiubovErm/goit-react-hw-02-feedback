@@ -17,13 +17,13 @@ export const Button = styled.button`
   border-radius: ${props => props.theme.radii.normal};
   border: none;
   background-color: ${props => {
-    if (props.children === 'good') {
+    if (props.name === 'good') {
       return props.theme.colors.green;
     }
-    if (props.children === 'neutral') {
+    if (props.name === 'neutral') {
       return props.theme.colors.orange;
     }
-    if (props.children === 'bad') {
+    if (props.name === 'bad') {
       return props.theme.colors.red;
     }
   }};
