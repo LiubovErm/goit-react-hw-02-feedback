@@ -9,7 +9,7 @@ export const theme = {
     green: '#12A543',
     orange: '#D99618',
     yellow: '#E1D817',
-    blue: '#179BE1',
+    blue: '#F0FFFF',
     red: '#E14817',
   },
   space: [0, 2, 4, 8, 16, 32, 64, 128, 256],

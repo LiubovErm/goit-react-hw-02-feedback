@@ -16,7 +16,17 @@ export const Button = styled.button`
   text-align: center;
   border-radius: ${props => props.theme.radii.normal};
   border: none;
-  background-color: ${props => props.theme.colors.grey};
+  background-color: ${props => {
+    if (props.children === 'good') {
+      return props.theme.colors.green;
+    }
+    if (props.children === 'neutral') {
+      return props.theme.colors.orange;
+    }
+    if (props.children === 'bad') {
+      return props.theme.colors.red;
+    }
+  }};
   width: 80px;
   padding: ${props => props.theme.space[3]}px;
   :hover {
